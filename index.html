@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Consumption Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>Energy Consumption Prediction Dashboard</h1>
+
+<div class="filter-container">
+    <label for="hourFilter">Select Hour:</label>
+    <select id="hourFilter">
+        <option value="all">All Hours</option>
+    </select>
+</div>
+
+<div class="chart-container">
+    <h2>Actual vs Predicted Energy Consumption</h2>
+    <canvas id="lineChart"></canvas>
+</div>
+
+<div class="chart-container">
+    <h2>Average Hourly Energy Consumption</h2>
+    <canvas id="barChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
